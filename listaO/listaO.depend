@@ -1,0 +1,11 @@
+# depslib dependency file v1.0
+1462774433 source:/home/senjuana/Documentos/proyectos_programacion/proyectos_c-c++/listaO/list_imple.cpp
+	<bits/stdc++.h>
+	"list.h"
+
+1462774969 /home/senjuana/Documentos/proyectos_programacion/proyectos_c-c++/listaO/list.h
+
+1462774236 source:/home/senjuana/Documentos/proyectos_programacion/proyectos_c-c++/listaO/main.cpp
+	<bits/stdc++.h>
+	"list.h"
+
