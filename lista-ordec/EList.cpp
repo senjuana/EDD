@@ -90,6 +90,3 @@ void print(EList &lista){
  bool llena(EList &lista){
     return lista.s==lista.n;
  }
-
-
-

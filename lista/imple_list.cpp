@@ -16,13 +16,26 @@ void lista::inser(const int x){
     start =p;
     s++;
 }
-void lista::(){
+void lista::del(const int x){
     if(vacia())return;
-    Nodo *p;
+    Nodo *p =NULL;
+    Nodo *q;
     p = start;
-    start = start->next;
-    delete p;
+    while(p!= NULL && p->data != x){
+      q = p;
+      p = p->next;
+    }
+    if(p == NULL)return;
+    if(q == NULL){
+      start = start->next;
+      delete p;
+    }
+    else{
+      q->next = p->next;
+      delete p;
+    }
 }
+
 void lista::borrar(Nodo* &p){
     Nodo *q;
     while(p!=NULL){

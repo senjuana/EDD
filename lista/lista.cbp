@@ -33,7 +33,7 @@
 			<Add option="-fexceptions" />
 		</Compiler>
 		<Unit filename="imple_list.cpp" />
-		<Unit filename="list.h" />
+		<Unit filename="lista.h" />
 		<Unit filename="main.cpp" />
 		<Extensions>
 			<code_completion />

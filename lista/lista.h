@@ -1,10 +1,10 @@
-#ifndef __list
-#define __list
+#ifndef __lista
+#define __lista
 #include <bits/stdc++.h>
 
-class list {
+class lista {
   private:
-   //// Clase local de nodo para la list:
+   //// Clase local de nodo para la lista:
    class Nodo {
      public:
       // Constructor:
@@ -22,14 +22,14 @@ class list {
 
   public:
    // Constructor y destructor b�sicos:
-   list(const int x) :
+   lista(const int x) :
    n(x), start(NULL), s(0) {}
 
-   ~list();
-   // Insertar en la list:
+   ~lista();
+   // Insertar en la lista:
    void inser(const int dat);
-   // Borrar un elemento de la list:
-   void del();
+   // Borrar un elemento de la lista:
+   void del(const int dat);
 
    void print();
    bool full();
@@ -40,4 +40,4 @@ class list {
    void borrar(Nodo* &);
 };
 
-#endif//fin __list
+#endif//fin __lista
