@@ -1,0 +1,8 @@
+# depslib dependency file v1.0
+1462880895 source:/home/senjuana/Documentos/proyectos_programacion/proyectos_c-c++/lista/imple_list.cpp
+	"lista.h"
+	<bits/stdc++.h>
+
+1462880845 /home/senjuana/Documentos/proyectos_programacion/proyectos_c-c++/lista/lista.h
+	<bits/stdc++.h>
+
