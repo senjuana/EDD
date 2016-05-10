@@ -32,7 +32,9 @@
 			<Add option="-Wall" />
 			<Add option="-fexceptions" />
 		</Compiler>
+		<Unit filename="imple_pila.cpp" />
 		<Unit filename="main.cpp" />
+		<Unit filename="pila.h" />
 		<Extensions>
 			<code_completion />
 			<debugger />
