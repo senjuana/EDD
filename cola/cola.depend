@@ -1,0 +1,11 @@
+# depslib dependency file v1.0
+1462841632 source:/home/senjuana/Documentos/proyectos_programacion/proyectos_c-c++/cola/main.cpp
+	<iostream>
+
+1462845163 source:/home/senjuana/Documentos/proyectos_programacion/proyectos_c-c++/cola/imple_col.cpp
+	"cola.h"
+	<bits/stdc++.h>
+
+1462845046 /home/senjuana/Documentos/proyectos_programacion/proyectos_c-c++/cola/cola.h
+	<bits/stdc++.h>
+
