@@ -22,8 +22,9 @@ int main(){
         char c;
         cout << "Ingresa la prioridad: ";
         cin >> c;
-        if(c=='a'||c=='A'||c=='m'||c=='M'||c=='b'||c=='B'){
-          m.encolar(x,c);
+        if(c=='A'||c=='M'||c=='B'){
+          if(m.encolar(x,c)==false)
+            cout<<"No puedes ingresar a la cola, espera a que atiendan"<<endl;
         }else{cout <<" Ingresa una prioridad Valida"<< endl;}
     }break;
     case 2:{

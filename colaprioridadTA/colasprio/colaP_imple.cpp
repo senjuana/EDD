@@ -10,7 +10,7 @@ bool cola::encolar(const int x,char c){
     return true;}
     if(full())return false;
 
-    if(c=='a' || c == 'A'){
+    if( c == 'A'){//
     Nodo *q;
     Nodo *p;
       q = NULL;
@@ -21,7 +21,8 @@ bool cola::encolar(const int x,char c){
       }
       if(q == NULL){//principio
         q = new Nodo(x,c);
-        endcol->next =q;
+        start = q;
+        q->next = p;
         s++;
         return true;
       }
@@ -39,7 +40,7 @@ bool cola::encolar(const int x,char c){
         s++;
         return true;
       }
-    }else if( c =='m' || c == 'M'){
+    }else if( c == 'M'){
     Nodo *p;
     Nodo *q;
         q = NULL;
@@ -48,7 +49,7 @@ bool cola::encolar(const int x,char c){
           q = p;
           p = p->next;
         }
-        if(q == NULL){
+        if(q == NULL){//PRINCIPIO
           q = new Nodo(x,c);
           q->next = p;
           start = q;
@@ -69,7 +70,7 @@ bool cola::encolar(const int x,char c){
           s++;
           return true;
         }
-      }else{
+      }else{//INGRESO DE B
         endcol->next = new Nodo(x,c);
         endcol = endcol->next;
         s++;

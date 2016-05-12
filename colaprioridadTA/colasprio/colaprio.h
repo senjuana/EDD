@@ -23,7 +23,7 @@ class cola {
    int s;
 
   public:
-   // Constructor y destructor b�sicos:
+   // Constructor y destructor :
    cola(const int x) :
    n(x), start(NULL), s(0), endcol(NULL) {}
 
