@@ -1,0 +1,23 @@
+# depslib dependency file v1.0
+1463019614 source:/home/senjuana/Documentos/Universidad/Tercer_semestre/Estrucctura de datos/colaprioridad/colaP_imple.cpp
+	"colaprio.h"
+	<bits/stdc++.h>
+
+1463019657 /home/senjuana/Documentos/Universidad/Tercer_semestre/Estrucctura de datos/colaprioridad/colaprio.h
+	<bits/stdc++.h>
+
+1463019258 source:/home/senjuana/Documentos/Universidad/Tercer_semestre/Estrucctura de datos/colaprioridad/main.cpp
+	<bits/stdc++.h>
+	"colaprio.h"
+
+1463020363 source:/home/senjuana/Documentos/Universidad/Tercer_semestre/Estrucctura de datos/colaprioridad/colasprio/main.cpp
+	<bits/stdc++.h>
+	"colaprio.h"
+
+1463019657 /home/senjuana/Documentos/Universidad/Tercer_semestre/Estrucctura de datos/colaprioridad/colasprio/colaprio.h
+	<bits/stdc++.h>
+
+1463020827 source:/home/senjuana/Documentos/Universidad/Tercer_semestre/Estrucctura de datos/colaprioridad/colasprio/colaP_imple.cpp
+	"colaprio.h"
+	<bits/stdc++.h>
+
