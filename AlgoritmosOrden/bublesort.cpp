@@ -10,7 +10,7 @@ using namespace std;
                         arreglo[j+1]=Temp;}
 
                  for(int i=0;i<lon;i++)
-                    cout<<arreglo[i]<<endl;
+                    cout<<arreglo[i]<<" ";
                         }
 
 
@@ -19,13 +19,13 @@ using namespace std;
 
 int main(){
    int lon,n;
+   srand(time(NULL));
    cout<<"Ingresa el numero de numeros a capturar: ";
    cin>>lon;
 
    int arr[lon];
    for(int i=0;i<lon;i++){
-        cout<<"Ingresa el numero "<<i+1<<": ";
-        cin>>n;
+        n = rand() % 101;
         arr[i]=n;
     }
     cout<<endl<<"Numeros ordenados: "<<endl;
