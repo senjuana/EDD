@@ -1,6 +1,7 @@
 #include <bits/stdc++.h>
-using namespace std;
-    void ordenar_numeros(int arreglo[], int lon){
+using namespace std; 
+  
+ void ordenar_numeros(int arreglo[], int lon){
         int Temp;
          for(int i=0;i<lon;i++)
                 for(int j=0;j<lon-1;j++)
@@ -30,6 +31,6 @@ int main(){
     }
     cout<<endl<<"Numeros ordenados: "<<endl;
     ordenar_numeros(arr,lon);
-
+    cout<<endl;
 return 0;
 }
