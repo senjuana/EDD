@@ -45,6 +45,7 @@ int main()
     E[25]=0;
     E[26]=0;
     E[27]=1;
+   
     if(buscE(5,3,E))cout<<"esta";
     else cout<<"no esta";
      cout <<endl;
