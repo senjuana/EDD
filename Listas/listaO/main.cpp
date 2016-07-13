@@ -15,7 +15,7 @@ int main()
 
     m.print();
 
-    m.~lista();
+    
 
 
     return 0;
