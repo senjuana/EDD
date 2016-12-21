@@ -1,4 +1,6 @@
 #include "cola.h"
+#include <bits/stdc++.h>
+
 using namespace std;
 
 void cola::encolar(const int x){
