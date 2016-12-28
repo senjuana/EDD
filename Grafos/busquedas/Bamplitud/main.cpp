@@ -18,7 +18,8 @@ int main(){
   p.print();
   cout<<"\n"; 
   p.desencolar();
-
+  
+  p.encolar(45);
   p.print();
   cout<<"\n";
 
