@@ -3,42 +3,20 @@
 using namespace std;
 
 int main(){
-    pila p(20);
+	pila< double > piladouble(5);
+	double f = 1.1;
+	cout<< "Insertando elementos en la pila Double\n";
+	
+	while(piladouble.push(f)){
+		cout<< f <<' ';
+		f +=1.1;
+	}
 
-    p.push(23);
-    p.push(21);
-    p.push(22);
-    p.push(13);
-    p.push(234);
-    p.push(14);
-    p.push(9);
-    p.push(4);
+	cout<< "\nLa pila esta llena. No se puede insertar ele elemento "<< f
+		<<"\n\nSacando elementos de la pila Double\n";
+	while(piladouble.pop(f))
+		cout<< f <<' ';
 
-    cout<<"Top: ";
-    p.top();
-
-    p.pop();
-    cout<<endl;
-
-    cout<<"Top: ";
-    p.top();
-
-    p.pop();
-    cout<<endl;
-
-    cout<<"Top: ";
-    p.top();
-
-    p.pop();
-    cout<<endl;
-
-    cout<<"Top: ";
-    p.top();
-
-    p.pop();
-    cout<<endl;
-
-    p.~pila();
-
+	cout<< "\n";			
     return 0;
 }

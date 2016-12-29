@@ -1,41 +1,24 @@
 #include "pila.h"
-#include <bits/stdc++.h>
-using namespace std;
 
-void pila::push(const int x){
-  if(vacia()){
-    start = new Nodo(x);
-    s++;
-    return;
-  }
-  else{
-    Nodo *p;
-    p = new Nodo(x);
-    p->next = start;
-    start = p;
-    s++;
-  }
-}
-void pila::pop(){
-    if(vacia())return;
-    Nodo *p;
-    p = start;
-    start = start->next;
-    delete p;
-    s--;
-}
-void pila::borrar(Nodo* &p){
-    Nodo *q;
-    while(p!=NULL){
-       q = p;
-       p = p->next;
-       delete q;
-    }
+template < class T > pila< T >::pila( int s ){
+	size = s > 0 ? s : 10;
+	top = -1;			//inicia un pila vacia
+	stackPtr = new T[ size ];	//asigna espacio para los elementos
 }
 
-void pila::top(){cout<<start->data;}
+template < class T > bool pila< T >::push( const T &pushValue ){
+	if ( !isFull() ){
+		stackPtr[ ++top ] = pushValue;	//coloca un elemento en la pila
+		return true;
+	}
+	return false;
+}
 
-pila::~pila(){borrar(start);}
+template < class T > bool pila<T >::pop( T &popValue ){
+	if ( !isEmpty() ){
+		popValue = stackPtr[ top-- ];	//elimina el elemento mas arriba en la pila
+		return true;
+	}
+	return false;
+}
 
-bool pila::full(){ return s==n;}
-bool pila::vacia(){ return s==0;}
