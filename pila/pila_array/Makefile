@@ -4,7 +4,7 @@ EJECUTABLE=pila
 
 
 output: main.o 
-	$(CC)   main.o -o $(EJECUTABLE) && rm *.o
+	$(CC) main.o -o $(EJECUTABLE) && rm *.o
 	
 main.o: main.cpp
 	$(CC) $(CFLAGS) main.cpp
