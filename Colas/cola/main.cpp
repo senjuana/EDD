@@ -1,4 +1,3 @@
-#include <bits/stdc++.h>
 #include "cola.h"
 
 using namespace std;

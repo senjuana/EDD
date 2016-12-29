@@ -3,11 +3,14 @@ using namespace std;
 
 void cola::encolar(const int x){
     if(vacia()){ //entrada si esta vacia
-    start = new Nodo(x);
-    endcol = start;
-    s++;
-    return;}
-    if(full())return;
+    	start = new Nodo(x);
+    	endcol = start;
+    	s++;
+    	return;
+    }
+
+    if(full()) 
+	return;
 
     Nodo *p;
     Nodo *q;
@@ -17,13 +20,17 @@ void cola::encolar(const int x){
     endcol = p; //actualizacion endcol
     s++;
 }
+
 void cola::desencolar(){
-    if(vacia())return;
+    if(vacia())
+	return;
+    
     Nodo *p;
     p = start;
     start = start->next;
     delete p;
 }
+
 void cola::borrar(Nodo* &p){
     Nodo *q;
     while(p!=NULL){
