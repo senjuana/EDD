@@ -1,5 +1,6 @@
 #ifndef Arbol
 #define Arbol
+
 typedef struct snode{
     int data;
     struct snode *left;
@@ -17,4 +18,5 @@ bool vacio(Arbol &);
 void inser(Arbol &lista, int x);
 void print(Arbol &);
 nodo *crearnodo(int);
+
 #endif

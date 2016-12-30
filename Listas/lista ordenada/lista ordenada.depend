@@ -1,8 +1,0 @@
-# depslib dependency file v1.0
-1462881456 source:/home/senjuana/Documentos/proyectos_programacion/proyectos_c-c++/lista ordenada/main.cpp
-	"listO.h"
-	<bits/stdc++.h>
-
-1462881377 /home/senjuana/Documentos/proyectos_programacion/proyectos_c-c++/lista ordenada/listO.h
-	<bits/stdc++.h>
-
