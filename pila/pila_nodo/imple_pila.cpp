@@ -3,7 +3,7 @@ using namespace std;
 
 template < class T > pila< T >::pila( int capa ){
 	start = NULL;
-	n = capa;
+	n = capa > 0 ? capa : 10 ;
 	s = 0;
 }
 
