@@ -3,8 +3,8 @@ CFLAGS=-c
 EJECUTABLE=pila
 
 
-output: main.o imple_pila.o
-	$(CC)  main.o imple_pila.o -o $(EJECUTABLE) && rm *.o
+output: main.o
+	$(CC)  main.o -o $(EJECUTABLE) && rm *.o
 	
 main.o: main.cpp
 	$(CC) $(CFLAGS) main.cpp

@@ -7,29 +7,32 @@ template < class T > pila< T >::pila( int capa ){
 	s = 0;
 }
 
-template < class T > bool pila< T >::push(int x){
-  if(!isEmpty()){
-    start = new Nodo(x);
-    s++;
-    return;
-  }
-  else{
-    Nodo *p;
-    p = new Nodo(x);
-    p->next = start;
-    start = p;
-    s++;
-  }
+template < class T > bool pila< T >::push( const T &x ){
+  	Nodo *aux = new Nodo;
+	aux->data = x;
+	if(!isFull()){
+		aux->next = start;
+		start = aux;
+		s++;
+		return true;
+	}
+	return false;
 }
-void pila::pop(){
-    if(vacia())return;
-    Nodo *p;
-    p = start;
-    start = start->next;
-    delete p;
-    s--;
+
+
+template < class T > bool pila< T >::pop(){
+    if(!isEmpty()){
+    	Nodo *p;
+    	p = start;
+    	start = start->next;
+    	delete p;
+    	s--;
+	return true;
+    }
+    return false;
 }
-void pila::borrar(Nodo* &p){
+
+template < class T > void pila< T >::borrar( Nodo *p ){
     Nodo *q;
     while(p!=NULL){
        q = p;
@@ -38,9 +41,18 @@ void pila::borrar(Nodo* &p){
     }
 }
 
-void pila::top(){cout<<start->data;}
+template < class T > bool pila< T >::top( T &x ){
+	if(!isEmpty()){
+		x = start->data;
+		return true;
+	}
+	return false;
+}
 
-pila::~pila(){borrar(start);}
 
-bool pila::full(){ return s==n;}
-bool pila::vacia(){ return s==0;}
+
+
+template < class T > pila< T >::~pila(){borrar(start);}
+
+template < class T > bool pila< T >::isFull(){ return s==n;}
+template < class T > bool pila< T >::isEmpty(){ return s==0;}

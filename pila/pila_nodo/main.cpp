@@ -3,8 +3,8 @@
 using namespace std;
 
 int main(){
-    pila p(20);
-
+    pila < int > p(20);
+    int x;	
     p.push(23);
     p.push(21);
     p.push(22);
@@ -14,31 +14,29 @@ int main(){
     p.push(9);
     p.push(4);
 
-    cout<<"Top: ";
-    p.top();
+    p.top(x);
+    cout<<"Top: "<<x;
 
     p.pop();
     cout<<endl;
 
-    cout<<"Top: ";
-    p.top();
+    p.top(x);	
+    cout<<"Top: "<<x;
 
     p.pop();
     cout<<endl;
-
-    cout<<"Top: ";
-    p.top();
-
-    p.pop();
-    cout<<endl;
-
-    cout<<"Top: ";
-    p.top();
+    
+    p.top(x);
+    cout<<"Top: "<<x;
 
     p.pop();
     cout<<endl;
+    
+    p.top(x);    
+    cout<<"Top: "<<x;
 
-    p.~pila();
+    p.pop();
+    cout<<endl;
 
     return 0;
 }
