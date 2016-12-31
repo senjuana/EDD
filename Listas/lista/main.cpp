@@ -3,25 +3,25 @@
 using namespace std;
 
 int main(){
-    lista l(20);
+    lista < int > l(20);
 
-    l.inser(2);
-    l.inser(24);
-    l.inser(23);
-    l.inser(46);
-    l.inser(1);
-    l.inser(256);
-    l.inser(34);
-    l.inser(2532);
+    l.insert(2);
+    l.insert(24);
+    l.insert(23);
+    l.insert(46);
+    l.insert(1);
+    l.insert(256);
+    l.insert(34);
+    l.insert(2532);
 
-    l.print();
+    l.printList();
     cout<<endl;
 
-    l.del(24);
-    l.del(54);
-    l.del(1);
+    l.delet(24);
+    l.delet(54);
+    l.delet(1);
 
-    l.print();
-
+    l.printList();
+    cout<<endl;
     return 0;
 }

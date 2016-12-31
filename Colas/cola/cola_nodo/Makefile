@@ -1,15 +1,13 @@
-CC=g++
-CFLAGS=-c
+CXX =g++
+CFLAGS=-g -Wall -c
 EJECUTABLE=cola
+OBJS= main.o
 
-
-output: main.o
-	$(CC)  main.o -o $(EJECUTABLE) && rm *.o
+output: $(OBJS)
+	$(CXX)  $(OBJS) -o $(EJECUTABLE) && rm $(OBJS)
 	
-main.o: main.cpp
-	$(CC) $(CFLAGS) main.cpp
+main.o: main.cpp 
+	$(CXX) $(CFLAGS) main.cpp
 
-imple_col.o: imple_col.cpp
-	$(CC) $(CFLAGS)  imple_col.cpp
 clean:
 	rm $(EJECUTABLE)

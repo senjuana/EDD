@@ -3,8 +3,8 @@ CFLAGS=-c
 EJECUTABLE=lista
 
 
-output: main.o imple_list.o
-	$(CC)  main.o imple_list.o -o $(EJECUTABLE) && rm *.o
+output: main.o 
+	$(CC)  main.o -o $(EJECUTABLE) && rm *.o
 	
 main.o: main.cpp
 	$(CC) $(CFLAGS) main.cpp

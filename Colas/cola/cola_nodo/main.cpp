@@ -18,5 +18,6 @@ int main(){
 
     m.printQueue();
 
+    cout<<endl;
     return 0;
 }
