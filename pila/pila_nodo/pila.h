@@ -31,14 +31,14 @@ template < class T > class pila {
 
 
 
-//Impĺementacion
-template < class T > pila< T >::pila( int capa ){
+//Implementacion
+template < class T > pila< T >::pila( int capa ){//construcctor 
 	start = NULL;
-	n = capa > 0 ? capa :10 ;
+	n = capa > 0 ? capa :10 ;                //se inicializa la pila con 10 como valor default
 	s = 0;
 }
 
-template < class T > bool pila< T >::push( const T &x ){
+template < class T > bool pila< T >::push( const T &x ){//metodo push para insertar un dato en la pila
   	Nodo *aux = new Nodo;
 	aux->data = x;
 	if(!isFull()){
@@ -51,8 +51,8 @@ template < class T > bool pila< T >::push( const T &x ){
 }
 
 
-template < class T > bool pila< T >::pop(){
-    if(!isEmpty()){
+template < class T > bool pila< T >::pop(){//el metodo pop elimina el nodo que esta en top
+    if(!isEmpty()){			   // sin regresar ningun valor
     	Nodo *p;
     	p = start;
     	start = start->next;
@@ -63,8 +63,8 @@ template < class T > bool pila< T >::pop(){
     return false;
 }
 
-template < class T > void pila< T >::borrar( Nodo *p ){
-    Nodo *q;
+template < class T > void pila< T >::borrar( Nodo *p ){//metodo auxiliar para borrar todo los nodos
+    Nodo *q; 					       // se usa en el destrucctor es privado
     while(p!=NULL){
        q = p;
        p = p->next;
@@ -72,9 +72,9 @@ template < class T > void pila< T >::borrar( Nodo *p ){
     }
 }
 
-template < class T > bool pila< T >::top( T &x ){
-	if(!isEmpty()){
-		x = start->data;
+template < class T > bool pila< T >::top( T &x ){// metodo top te regresa el valor de el nodo hasta arriba
+	if(!isEmpty()){ 			 // de la pila en la variable que pasa por parametro se 
+		x = start->data;		 // se guarda el valor regresando un booleano como metodo.
 		return true;
 	}
 	return false;
@@ -83,11 +83,11 @@ template < class T > bool pila< T >::top( T &x ){
 
 
 
-template < class T > pila< T >::~pila(){borrar(start);}
+template < class T > pila< T >::~pila(){borrar(start);}//Destrucctor
 
-template < class T > bool pila< T >::isFull(){ return s==n;}
-template < class T > bool pila< T >::isEmpty(){ return s==0;}
+template < class T > bool pila< T >::isFull(){ return s==n;}//metodo auxiliar para saber si la l¿pila esta llena
+template < class T > bool pila< T >::isEmpty(){ return s==0;}//metodo auxiliarp ara saber si lap ila esta vacia
 
 
 
-#endif//fin __pila
+#endif  //fin __pila

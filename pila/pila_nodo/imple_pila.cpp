@@ -1,4 +1,5 @@
 #include "pila.h"
+#include <bits/stdc++.h>
 using namespace std;
 
 template < class T > pila< T >::pila( int capa ){

@@ -1,15 +1,15 @@
-CC=g++
-CFLAGS=-c
+CXX =g++
+CFLAGS=-g -Wall -c
 EJECUTABLE=pila
+OBJS= main.o
 
-
-output: main.o
-	$(CC)  main.o -o $(EJECUTABLE) && rm *.o
+output: $(OBJS)
+	$(CXX)  $(OBJS) -o $(EJECUTABLE) && rm $(OBJS)
 	
-main.o: main.cpp
-	$(CC) $(CFLAGS) main.cpp
+main.o: main.cpp pila.h
+	$(CXX) $(CFLAGS) main.cpp
 
-imple_pila.o: imple_pila.cpp
-	$(CC) $(CFLAGS)  imple_pila.cpp
+imple_pila.o: imple_pila.cpp pila.h
+	$(CXX) $(CFLAGS)  imple_pila.cpp
 clean:
 	rm $(EJECUTABLE)

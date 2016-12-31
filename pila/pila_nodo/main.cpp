@@ -1,42 +1,45 @@
-#include <bits/stdc++.h>
 #include "pila.h"
+#include <bits/stdc++.h>
+
 using namespace std;
 
-int main(){
-    pila < int > p(20);
-    int x;	
-    p.push(23);
-    p.push(21);
-    p.push(22);
-    p.push(13);
-    p.push(234);
-    p.push(14);
-    p.push(9);
-    p.push(4);
+int main (){
+	//instanciacion de tres objetos con diferentes tipo de dato
+	pila < int > pilaint(10);
+	pila < double > piladouble(5);
+	pila < char > pilachar(26);
+	//declaracion de los valores que seran insertados	
+	char c = 'A';
+	double f = 1.1;
+	int k = 1;
 
-    p.top(x);
-    cout<<"Top: "<<x;
+	while(piladouble.push(f))
+		f += 1.1;
+	
+	while(piladouble.top(f)){
+		cout<<f <<' ';
+		piladouble.pop();
+	}
 
-    p.pop();
-    cout<<endl;
+	while(pilaint.push(k))
+		k += 1;
+	cout<<endl;
+	while(pilaint.top(k)){
+		cout<<k <<' ';
+		pilaint.pop();
+	}
 
-    p.top(x);	
-    cout<<"Top: "<<x;
+	while(pilachar.push(c))
+		c++;
+	
+	cout<<endl;
+	while(pilachar.top(c)){
+		cout<<c<< ' ';
+		pilachar.pop();
+	}
+	cout<<endl;
 
-    p.pop();
-    cout<<endl;
-    
-    p.top(x);
-    cout<<"Top: "<<x;
-
-    p.pop();
-    cout<<endl;
-    
-    p.top(x);    
-    cout<<"Top: "<<x;
-
-    p.pop();
-    cout<<endl;
-
-    return 0;
+	
+	
+	return 0;
 }
