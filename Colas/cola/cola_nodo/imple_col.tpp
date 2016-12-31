@@ -1,7 +1,6 @@
-#include "cola.h"
-
+#include <bits/stdc++.h>
+using namespace std;
 //Implementacion
-
 template < class T > cola< T >::cola( const T& x ){
 	n = x > 0 ? x : 10;
 	s = 0;

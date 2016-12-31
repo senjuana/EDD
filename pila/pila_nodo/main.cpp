@@ -1,7 +1,4 @@
 #include "pila.h"
-#include <bits/stdc++.h>
-
-using namespace std;
 
 int main (){
 	//instanciacion de tres objetos con diferentes tipo de dato

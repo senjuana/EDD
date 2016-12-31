@@ -1,4 +1,3 @@
-#include "pila.h"
 
 //implementacion
 template < class T > pila< T >::pila( int s ){
