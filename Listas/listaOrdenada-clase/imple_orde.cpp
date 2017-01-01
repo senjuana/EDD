@@ -2,6 +2,12 @@
 #include <bits/stdc++.h>
 using namespace std;
 
+
+lista::lista(const int x){
+	n = x > 0 ? x : 10;
+	s = 0;
+	start = NULL;
+}
 void lista::inser(const int x){
     if(full())return;
     if(vacia()) start = new Nodo(x);

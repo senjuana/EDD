@@ -22,9 +22,7 @@ class lista {
 
   public:
    // Constructor y destructor b�sicos:
-   lista(const int x) :
-   n(x), start(NULL), s(0) {}
-
+   lista(const int x);
    ~lista();
    // Insertar en la lista:
    void inser(const int dat);
@@ -41,3 +39,4 @@ class lista {
 };
 
 #endif//fin __lista
+
