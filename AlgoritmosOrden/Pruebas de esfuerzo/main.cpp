@@ -102,7 +102,7 @@ int main() {
             for( i=0;i<10;i++){
                 cout<<endl<< c[i];
             }
-            cout<<"\nAlgoritmos robados de https://github.com/sheldon y https://github.com/grover-almeida";
+            cout<<"\nAlgoritmos robados de https://github.com/sheldon y https://github.com/grover-almeida"<<endl;
 
         }break;
     }
