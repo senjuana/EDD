@@ -9,7 +9,7 @@ version 1.0
 
 Pre-release
 version 1.8
-[notas de version](https://github.com/senjuana/EDD/realeases/tag/v1.8)
+[notas de version](https://github.com/senjuana/EDD/releases/tag/v1.8)
 
 
 
