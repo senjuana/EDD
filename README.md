@@ -63,7 +63,7 @@ Antes de enviar un pedazo de codigo por favor verifica que lo que envias funcion
 # FAQ
 
 * **Cual es el punto de compartir tu codigo?**
-  Mi unico interes es el de poder compartir mis implementaciones de las estructurads de datos como  herramnienta de aprendizaje.
+  Mi unico interes es el de poder compartir mis implementaciones de las estructuras de datos como  herramnienta de aprendizaje.
  
 * **Puedo utilizar este codigo en mis proyectos?**
   Siempre y cuando sigas los parametros de la licencia cualquiera puede utilizar o modiificar las implementaciones de este repositorio para cualquier proyecto personal.
