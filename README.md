@@ -2,7 +2,7 @@
 <img src="http://i.imgur.com/Y5ar60s.png" alt="Estructura de Datos">
 </p>
 # About
-Este  es un repositorio publico que existe para poder guardar los topicos programados en la clase de Estrucctura de datos y algunos topicos que no fueron tocados en la clase pero si corresponden a la Estrucctura de datos. 
+Este  es un repositorio publico que existe para poder guardar los topicos programados en la clase de Estructura de datos y algunos topicos que no fueron tocados en la clase pero si corresponden a la Estructura de datos. 
 
 
 ## Requirements
