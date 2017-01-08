@@ -21,6 +21,14 @@ Requirements:
     $ cd EDD
 
 
+## Compilando
+Para compilar las implementaciones dentro de este repositorio, necesitas tener Cmake instalado.
+en el siguiente ejemplo compilaremos una de las pilas.    
+    
+    $ cd pila
+    $ cd pila_nodo
+    $ make
+    
 # Contributing
 Si encuentras un bug en el codigo o un issue, por favor notificame de manera privada en 
 [mi cuenta personal de twitter](https://twitter.com/senjuana).
@@ -59,7 +67,8 @@ Antes de enviar un pedazo de codigo por favor verifica que lo que envias funcion
 * **Puedo utilizar este codigo en mis proyectos?**
   Siempre y cuando sigas los parametros de la licencia cualquiera puede utilizar o modiificar las implementaciones de este repositorio para cualquier proyecto personal.
   
-  
+
+# Version Notes
 
 Primera version (12/marzo/2016)
 version 1.0
