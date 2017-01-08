@@ -28,6 +28,7 @@ en el siguiente ejemplo compilaremos una de las pilas.
     $ cd pila
     $ cd pila_nodo
     $ make
+    $ ./pila
     
 # Contributing
 Si encuentras un bug en el codigo o un issue, por favor notificame de manera privada en 
