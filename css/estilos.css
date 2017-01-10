@@ -51,6 +51,3 @@ p {font-size: 16px;}
   transition: color 0.5s, background-color 0.5s,border-color 0.5s;
 }
 
-.col-md-6{
-  width: 50%;
-}
