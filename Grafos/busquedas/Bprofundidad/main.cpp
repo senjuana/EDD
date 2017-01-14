@@ -1,7 +1,5 @@
-#include<stdio.h>
-
-
-int a[20][20],reach[20],n;
+#include <bits/stdc++.h>
+int a[20][20],reach[20],n;//
 
 void dfs(int v) {
   int i;
@@ -15,22 +13,26 @@ void dfs(int v) {
 }
 
 int main(){
+
   int i,j,count=0;
-  printf("\n Enter number of vertices:");
+  printf("\n Entra el numero de vertices:");
   scanf("%d",&n);
+
   for (i=1;i<=n;i++) {
     reach[i]=0;
     for (j=1;j<=n;j++)
       a[i][j]=0;
   }
-  printf("\nEnter the adjacency matrix:\n");
+  printf("\nEntra la matriz de adjacencia:\n");
+
   for (i=1;i<=n;i++)
     for (j=1;j<=n;j++)
       scanf("%d",&a[i][j]);
   printf("\n");
 
-  printf("Vertices in the order they are traversed:\n");
+  printf("Vertices en el orden del recorrido:\n");
   dfs(1);
+
   for (i=1;i<=n;i++) {
     if(reach[i])
     count++;
@@ -38,9 +40,9 @@ int main(){
   printf("\n");
 
   if(count==n)
-    printf("\n Graph is connected");
+    printf("\n El grafo esta conectado");
   else
-    printf("\n Graph is not connected");
+    printf("\n Elgrafo no esta conectado");
 
   printf("\n");
   //getch();
