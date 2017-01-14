@@ -5,7 +5,7 @@ EJECUTABLE=hello
 
 output: main.o imple_col.o
 	$(CC)  main.o imple_col.o -o $(EJECUTABLE) && rm *.o
-	
+
 main.o: main.cpp
 	$(CC) $(CFLAGS) main.cpp
 
